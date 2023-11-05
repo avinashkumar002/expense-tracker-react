@@ -1,0 +1,123 @@
+
+  /* Default styles for larger screens */
+.expense-tracker {
+  margin-left: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #023047;
+}
+
+.expense-tracker h1 {
+  font-size: 40px;
+}
+
+.expense-tracker button {
+  margin-left: 10px;
+}
+/* Base styles for the form */
+.add-transaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-transaction input[type="text"],
+.add-transaction input[type="number"] {
+  display: inline;
+  width: 70%;
+  margin: 5px 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-transaction input[type="radio"] {
+  margin: 5px 5px 5px 0;
+}
+
+.add-transaction label {
+  margin-right: 10px;
+}
+
+.add-transaction button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .add-transaction input[type="text"],
+  .add-transaction input[type="number"] {
+    width: 100%;
+  }
+
+  .add-transaction input[type="radio"] {
+    margin: 5px 5px 5px 0;
+  }
+
+  .add-transaction label {
+    margin-right: 10px;
+  }
+}
+
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px; /* Reduce the margin for smaller screens */
+}
+
+.profile-photo {
+  width: 150px;
+  border-radius: 30%;
+}
+
+.sign-out-button {
+  border: none;
+  margin-top: 20px; /* Adjust margin for smaller screens */
+  width: 150px;
+  background: #3498db;
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.sign-out-button:hover {
+  background: #3cb0fd;
+  background-image: linear-gradient(to bottom, #bcdcf3, #3498db);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.transactions {
+  margin: 5%; /* Adjust margins */
+  padding: 10px;
+  width: 80%;
+  max-width: 100%; /* Make it responsive to the screen width */
+  height: auto; /* Allow the height to adjust based on content */
+  overflow: auto;
+  border: 3px solid #023047;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .expense-tracker {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
